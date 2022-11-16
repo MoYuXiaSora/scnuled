@@ -1,0 +1,91 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.37.0.0
+Copyright (C) 2022 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: c 2540502, HP Inc., LIC=QF82M-XA3CE-DYQV3-AWARV-G69JJ-ZXQ6S
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.37.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARM5\Bin
+C Compiler:      Armcc.exe V5.06 update 7 (build 960)
+Assembler:       Armasm.exe V5.06 update 7 (build 960)
+Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
+Library Manager: ArmAr.exe V5.06 update 7 (build 960)
+Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
+CPU DLL:         SARMCM3.DLL V5.37.0.0
+Dialog DLL:      DARMSTM.DLL V1.69.1.0
+Target DLL:      CMSIS_AGDI.dll V1.33.12.0
+Dialog DLL:      TARMSTM.DLL V1.67.1.0
+ 
+<h2>Project:</h2>
+C:\scnu\test\20220830\20220830\USER\HC05.uvprojx
+Project File Date:  11/12/2022
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'C:\Keil_v5\ARM\ARM5\Bin'
+Build target 'HC05'
+compiling frame.c...
+frame.h(13): warning:  #1295-D: Deprecated declaration GetReadyToOTA - give arg types
+  u8 GetReadyToOTA();  
+frame.h(17): warning:  #1-D: last line of file ends without a newline
+  #endif  
+CRC.h(5): warning:  #1295-D: Deprecated declaration init_CRC32_table - give arg types
+  void init_CRC32_table();
+CRC.h(8): warning:  #1-D: last line of file ends without a newline
+  #endif  
+frame.c(22): warning:  #375-D: declaration requires a typedef name
+  };
+frame.c(106): warning:  #940-D: missing return statement at end of non-void function "FrameCheckAndDataSet" 
+  }
+frame.c(109): warning:  #177-D: variable "SleepCmd"  was declared but never referenced
+  	u8 SleepCmd = FrameCmd[5];
+frame.c(110): warning:  #177-D: variable "HIS_HUE"  was declared but never referenced
+  	u16 HIS_HUE = (0x0000|(FrameCmd[6]<<8|FrameCmd[7]));
+frame.c(111): warning:  #177-D: variable "HIS_S"  was declared but never referenced
+  	u8 HIS_S = FrameCmd[8];
+frame.c(112): warning:  #177-D: variable "HIS_I"  was declared but never referenced
+  	u8 HIS_I = FrameCmd[9];
+frame.c(113): warning:  #177-D: variable "CCT_CT"  was declared but never referenced
+  	u16 CCT_CT = (0x0000|(FrameCmd[10]<<8|FrameCmd[11]));
+frame.c(114): warning:  #177-D: variable "CCT_I"  was declared but never referenced
+  	u8 CCT_I =  FrameCmd[12];
+frame.c(115): warning:  #177-D: variable "FX_MODE"  was declared but never referenced
+  	u8 FX_MODE =  FrameCmd[13];
+frame.c(116): warning:  #177-D: variable "FX_TYPE"  was declared but never referenced
+  	u8 FX_TYPE =  FrameCmd[14];
+frame.c(117): warning:  #177-D: variable "FX_I"  was declared but never referenced
+  	u8 FX_I =  FrameCmd[15];
+frame.c(118): warning:  #177-D: variable "FX_FREQ"  was declared but never referenced
+  	u8 FX_FREQ =  FrameCmd[16];
+frame.c(133): warning:  #223-D: function "u1_printf" declared implicitly
+  	u1_printf("0x05");
+frame.c(159): warning:  #223-D: function "u1_printf" declared implicitly
+  				u1_printf("0x06 last");
+frame.c(166): warning:  #940-D: missing return statement at end of non-void function "LoadOTAData" 
+  }
+frame.c(202): warning:  #940-D: missing return statement at end of non-void function "OTAFailCmd" 
+  }
+frame.c: 20 warnings, 0 errors
+linking...
+Program Size: Code=22792 RO-data=960 RW-data=360 ZI-data=64352  
+FromELF: creating hex file...
+"..\OBJ\ATK-HC05.axf" - 0 Error(s), 20 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F1xx_DFP.2.4.0.pack
+                Keil.STM32F1xx_DFP.2.4.0
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  C:/Users/25405/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include
+
+<h2>Collection of Component Files used:</h2>
+Build Time Elapsed:  00:00:00
+</pre>
+</body>
+</html>

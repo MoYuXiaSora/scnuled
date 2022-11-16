@@ -18,6 +18,4 @@
 ..\obj\usmart_config.o: ..\STM32F10x_FWLib\inc\misc.h
 ..\obj\usmart_config.o: ..\SYSTEM\delay\delay.h
 ..\obj\usmart_config.o: ..\SYSTEM\sys\sys.h
-..\obj\usmart_config.o: ..\HARDWARE\LCD\lcd.h
-..\obj\usmart_config.o: C:\Keil_v5\ARM\ARM5\Bin\..\include\stdlib.h
 ..\obj\usmart_config.o: ..\HARDWARE\HC05\hc05.h

@@ -21,58 +21,170 @@ Target DLL:      CMSIS_AGDI.dll V1.33.12.0
 Dialog DLL:      TARMSTM.DLL V1.67.1.0
  
 <h2>Project:</h2>
-C:\scnu\test\20220830\20220830\USER\HC05.uvprojx
+C:\scnu\test\20220830\20220830\led2022\scnuled\USER\HC05.uvprojx
 Project File Date:  11/12/2022
 
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 7 (build 960)', folder: 'C:\Keil_v5\ARM\ARM5\Bin'
 Build target 'HC05'
+compiling rs485.c...
+compiling CRC.c...
+compiling usart3.c...
+..\HARDWARE\USART3\usart3.c(20): warning:  #260-D: explicit type is missing ("int" assumed)
+  extern BLE_SERVICE_STATUS;
+..\HARDWARE\USART3\usart3.c(21): warning:  #260-D: explicit type is missing ("int" assumed)
+  extern BLE_RX_STA;
+..\HARDWARE\USART3\usart3.c(22): warning:  #260-D: explicit type is missing ("int" assumed)
+  extern recou;
+..\HARDWARE\USART3\usart3.c(140): warning:  #177-D: variable "ap"  was declared but never referenced
+  	va_list ap;
+..\HARDWARE\USART3\usart3.c: 4 warnings, 0 errors
+compiling hc05.c...
+..\USER\frame.h(13): warning:  #1295-D: Deprecated declaration GetReadyToOTA - give arg types
+  u8 GetReadyToOTA();  
+..\USER\frame.h(18): warning:  #1-D: last line of file ends without a newline
+  #endif  
+..\HARDWARE\HC05\hc05.c(34): warning:  #188-D: enumerated type mixed with another type
+  	BLE_SERVICE_STATUS = 0;
+..\HARDWARE\HC05\hc05.c(52): warning:  #188-D: enumerated type mixed with another type
+  	BLE_SERVICE_STATUS = 1;
+..\HARDWARE\HC05\hc05.c(53): warning:  #940-D: missing return statement at end of non-void function "HC05_Init" 
+  }
+..\HARDWARE\HC05\hc05.c(33): warning:  #177-D: variable "NVIC_InitStructure"  was declared but never referenced
+  	NVIC_InitTypeDef NVIC_InitStructure;
+..\HARDWARE\HC05\hc05.c(105): warning:  #188-D: enumerated type mixed with another type
+  	BLE_SERVICE_STATUS = 1;
+..\HARDWARE\HC05\hc05.c(124): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+  	disconnloc = strstr(USART3_RX_BUF, "BLEDISCONN");
+..\HARDWARE\HC05\hc05.c(125): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+  	connloc = strstr(USART3_RX_BUF, "BLECFGMTU:");
+..\HARDWARE\HC05\hc05.c(126): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+  	writeloc = strstr(USART3_RX_BUF, "WRITE");
+..\HARDWARE\HC05\hc05.c(127): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+  	paramloc = strstr(USART3_RX_BUF, "CONNPARAM");
+..\HARDWARE\HC05\hc05.c(128): warning:  #223-D: function "u1_printf" declared implicitly
+  	u1_printf("status+ %x ", BLE_SERVICE_STATUS);
+..\HARDWARE\HC05\hc05.c(134): warning:  #188-D: enumerated type mixed with another type
+  		BLE_SERVICE_STATUS = 0;
+..\HARDWARE\HC05\hc05.c(139): warning:  #188-D: enumerated type mixed with another type
+  		BLE_SERVICE_STATUS = 1;
+..\HARDWARE\HC05\hc05.c(144): warning:  #188-D: enumerated type mixed with another type
+  		BLE_SERVICE_STATUS = 2;
+..\HARDWARE\HC05\hc05.c(151): warning:  #188-D: enumerated type mixed with another type
+  		BLE_SERVICE_STATUS = 0;
+..\HARDWARE\HC05\hc05.c(156): warning:  #188-D: enumerated type mixed with another type
+  		BLE_SERVICE_STATUS = 3;
+..\HARDWARE\HC05\hc05.c(162): warning:  #188-D: enumerated type mixed with another type
+  			BLE_SERVICE_STATUS = 0;
+..\HARDWARE\HC05\hc05.c(177): warning:  #188-D: enumerated type mixed with another type
+  		BLE_SERVICE_STATUS = 1;
+..\HARDWARE\HC05\hc05.c(181): warning:  #940-D: missing return statement at end of non-void function "BlueToothMsgManage" 
+  }
+..\HARDWARE\HC05\hc05.c(194): warning:  #223-D: function "u1_printf" declared implicitly
+  	u1_printf("status+ %x ", BLE_SERVICE_STATUS);
+..\HARDWARE\HC05\hc05.c(197): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+  	disconnloc = strstr(USART3_RX_BUF, "BLEDISCONN");
+..\HARDWARE\HC05\hc05.c(198): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+  	writeloc = strstr(USART3_RX_BUF, "WRITE");
+..\HARDWARE\HC05\hc05.c(202): warning:  #188-D: enumerated type mixed with another type
+  		BLE_SERVICE_STATUS = 0;
+..\HARDWARE\HC05\hc05.c(206): warning:  #188-D: enumerated type mixed with another type
+  		BLE_SERVICE_STATUS = 1;
+..\HARDWARE\HC05\hc05.c(212): warning:  #188-D: enumerated type mixed with another type
+  		BLE_SERVICE_STATUS = 0;
+..\HARDWARE\HC05\hc05.c(217): warning:  #188-D: enumerated type mixed with another type
+  		BLE_SERVICE_STATUS = 3;
+..\HARDWARE\HC05\hc05.c(235): warning:  #223-D: function "u1_printf" declared implicitly
+  	u1_printf("status+ %x ", BLE_SERVICE_STATUS);
+..\HARDWARE\HC05\hc05.c(238): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+  	disconnloc = strstr(USART3_RX_BUF, "BLEDISCONN");
+..\HARDWARE\HC05\hc05.c(239): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+  	writeloc = strstr(USART3_RX_BUF, "WRITE:");
+..\HARDWARE\HC05\hc05.c(243): warning:  #188-D: enumerated type mixed with another type
+  		BLE_SERVICE_STATUS = 0;
+..\HARDWARE\HC05\hc05.c(247): warning:  #188-D: enumerated type mixed with another type
+  		BLE_SERVICE_STATUS = 1;
+..\HARDWARE\HC05\hc05.c(255): warning:  #188-D: enumerated type mixed with another type
+  		BLE_SERVICE_STATUS = 0;
+..\HARDWARE\HC05\hc05.c(260): warning:  #188-D: enumerated type mixed with another type
+  		BLE_SERVICE_STATUS = 3;
+..\HARDWARE\HC05\hc05.c(264): warning:  #940-D: missing return statement at end of non-void function "BlueToothCmdManage" 
+  }
+..\HARDWARE\HC05\hc05.c(232): warning:  #177-D: variable "InitRes"  was declared but never referenced
+  	u8 InitRes;
+..\HARDWARE\HC05\hc05.c(281): warning:  #223-D: function "u1_printf" declared implicitly
+  	u1_printf("setcmd:%s", atstr);
+..\HARDWARE\HC05\hc05.c(295): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+  			loc = strstr(USART3_RX_BUF, check);
+..\HARDWARE\HC05\hc05.c(295): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+  			loc = strstr(USART3_RX_BUF, check);
+..\HARDWARE\HC05\hc05.c(279): warning:  #550-D: variable "temp"  was set but never used
+  	u8 temp, t;
+..\HARDWARE\HC05\hc05.c: 40 warnings, 0 errors
+compiling main.c...
+main.c(16): warning:  #177-D: variable "t"  was declared but never referenced
+  	u8 t = 0;
+main.c(17): warning:  #177-D: variable "key"  was declared but never referenced
+  	u8 key;
+main.c(18): warning:  #177-D: variable "sendmask"  was declared but never referenced
+  	u8 sendmask = 0;
+main.c(19): warning:  #177-D: variable "sendcnt"  was declared but never referenced
+  	u8 sendcnt = 0;
+main.c(20): warning:  #177-D: variable "sendbuf"  was declared but never referenced
+  	u8 sendbuf[20];
+main.c(21): warning:  #177-D: variable "reclen"  was declared but never referenced
+  	u8 reclen = 0;
+main.c(22): warning:  #177-D: variable "c"  was declared but never referenced
+  	u8 c = 0;
+main.c(23): warning:  #177-D: variable "role"  was declared but never referenced
+  	u8 role = 0;
+main.c(24): warning:  #177-D: variable "rs485buf"  was declared but never referenced
+  	u8 rs485buf[35];
+main.c(25): warning:  #177-D: variable "i"  was declared but never referenced
+  	u8 i = 0;
+main.c(26): warning:  #177-D: variable "cnt"  was declared but never referenced
+  	u8 cnt = 0;
+main.c(27): warning:  #177-D: variable "co"  was declared but never referenced
+  	u8 co;
+main.c: 12 warnings, 0 errors
 compiling frame.c...
 frame.h(13): warning:  #1295-D: Deprecated declaration GetReadyToOTA - give arg types
   u8 GetReadyToOTA();  
-frame.h(17): warning:  #1-D: last line of file ends without a newline
+frame.h(18): warning:  #1-D: last line of file ends without a newline
   #endif  
-CRC.h(5): warning:  #1295-D: Deprecated declaration init_CRC32_table - give arg types
-  void init_CRC32_table();
-CRC.h(8): warning:  #1-D: last line of file ends without a newline
-  #endif  
-frame.c(22): warning:  #375-D: declaration requires a typedef name
-  };
 frame.c(106): warning:  #940-D: missing return statement at end of non-void function "FrameCheckAndDataSet" 
   }
-frame.c(109): warning:  #177-D: variable "SleepCmd"  was declared but never referenced
-  	u8 SleepCmd = FrameCmd[5];
-frame.c(110): warning:  #177-D: variable "HIS_HUE"  was declared but never referenced
-  	u16 HIS_HUE = (0x0000|(FrameCmd[6]<<8|FrameCmd[7]));
-frame.c(111): warning:  #177-D: variable "HIS_S"  was declared but never referenced
-  	u8 HIS_S = FrameCmd[8];
-frame.c(112): warning:  #177-D: variable "HIS_I"  was declared but never referenced
-  	u8 HIS_I = FrameCmd[9];
-frame.c(113): warning:  #177-D: variable "CCT_CT"  was declared but never referenced
-  	u16 CCT_CT = (0x0000|(FrameCmd[10]<<8|FrameCmd[11]));
-frame.c(114): warning:  #177-D: variable "CCT_I"  was declared but never referenced
-  	u8 CCT_I =  FrameCmd[12];
-frame.c(115): warning:  #177-D: variable "FX_MODE"  was declared but never referenced
-  	u8 FX_MODE =  FrameCmd[13];
-frame.c(116): warning:  #177-D: variable "FX_TYPE"  was declared but never referenced
-  	u8 FX_TYPE =  FrameCmd[14];
-frame.c(117): warning:  #177-D: variable "FX_I"  was declared but never referenced
-  	u8 FX_I =  FrameCmd[15];
-frame.c(118): warning:  #177-D: variable "FX_FREQ"  was declared but never referenced
-  	u8 FX_FREQ =  FrameCmd[16];
-frame.c(133): warning:  #223-D: function "u1_printf" declared implicitly
-  	u1_printf("0x05");
-frame.c(159): warning:  #223-D: function "u1_printf" declared implicitly
-  				u1_printf("0x06 last");
-frame.c(166): warning:  #940-D: missing return statement at end of non-void function "LoadOTAData" 
-  }
-frame.c(202): warning:  #940-D: missing return statement at end of non-void function "OTAFailCmd" 
-  }
-frame.c: 20 warnings, 0 errors
+frame.c(110): warning:  #177-D: variable "SleepCmd"  was declared but never referenced
+      u8 SleepCmd = FrameCmd[5];
+frame.c(111): warning:  #177-D: variable "HIS_HUE"  was declared but never referenced
+      u16 HIS_HUE = (0x0000 | (FrameCmd[6] << 8 | FrameCmd[7]));
+frame.c(112): warning:  #177-D: variable "HIS_S"  was declared but never referenced
+      u8 HIS_S = FrameCmd[8];
+frame.c(113): warning:  #177-D: variable "HIS_I"  was declared but never referenced
+      u8 HIS_I = FrameCmd[9];
+frame.c(114): warning:  #177-D: variable "CCT_CT"  was declared but never referenced
+      u16 CCT_CT = (0x0000 | (FrameCmd[10] << 8 | FrameCmd[11]));
+frame.c(115): warning:  #177-D: variable "CCT_I"  was declared but never referenced
+      u8 CCT_I = FrameCmd[12];
+frame.c(116): warning:  #177-D: variable "FX_MODE"  was declared but never referenced
+      u8 FX_MODE = FrameCmd[13];
+frame.c(117): warning:  #177-D: variable "FX_TYPE"  was declared but never referenced
+      u8 FX_TYPE = FrameCmd[14];
+frame.c(118): warning:  #177-D: variable "FX_I"  was declared but never referenced
+      u8 FX_I = FrameCmd[15];
+frame.c(119): warning:  #177-D: variable "FX_FREQ"  was declared but never referenced
+      u8 FX_FREQ = FrameCmd[16];
+frame.c(135): warning:  #223-D: function "u1_printf" declared implicitly
+      u1_printf("0x05");
+frame.c(144): warning:  #223-D: function "u1_printf" declared implicitly
+          u1_printf("0x06");
+frame.c(169): warning:  #223-D: function "u1_printf" declared implicitly
+                  u1_printf("0x06");
+frame.c: 16 warnings, 0 errors
 linking...
-Program Size: Code=22792 RO-data=960 RW-data=360 ZI-data=64352  
+Program Size: Code=23248 RO-data=960 RW-data=376 ZI-data=64352  
 FromELF: creating hex file...
-"..\OBJ\ATK-HC05.axf" - 0 Error(s), 20 Warning(s).
+"..\OBJ\ATK-HC05.axf" - 0 Error(s), 72 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -85,7 +197,7 @@ Package Vendor: Keil
   C:/Users/25405/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include
 
 <h2>Collection of Component Files used:</h2>
-Build Time Elapsed:  00:00:00
+Build Time Elapsed:  00:00:01
 </pre>
 </body>
 </html>

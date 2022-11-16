@@ -21,12 +21,12 @@
 #define HC05_LED  	PAin(15)		//À¶ÑÀÁ¬½Ó×´Ì¬ÐÅºÅ
   
 u8 HC05_Init(void);
-u8 HC05_Set_Cmd(u8* atstr , u8*check);
+u8 HC05_Set_Cmd(u8* atstr , u8*check,int spacecount);
 u8 BlueToothInitTest(void) ;
 u8 BlueToothNameCheck(void) ;
 u8 BlueToothcfgeCheck(void) ;
 u8 BlueToothSPPInit(void) ;
-u8 BlueToothMsgManage(u8* atstr);
+u8 BlueToothMsgManage(u8* atstr,u8 LenthOfAT );
 u8 BlueToothCmdManage(u8* atstr);
 u8 BlueToothSPPManage(u8* atstr);
 #endif  

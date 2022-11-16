@@ -13,5 +13,6 @@ u8 Datacmd(u8 FrameCmd[]);
 u8 GetReadyToOTA();  
 u8 LoadOTAData(u8 FrameData[]);
 u8 ReturnFrame(u8 FrameCmd ,u8 DataLenth,u8 ResData[]);
+u8 CheckFinalRes(void);
 
 #endif  

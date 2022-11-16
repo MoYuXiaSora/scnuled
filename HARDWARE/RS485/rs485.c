@@ -50,9 +50,10 @@ void USART2_IRQHandler(void)
 							{
 								RXDData[pDMX_buf++] = (u8)UDR; //
                                  //
-								if(pDMX_buf > 511)
+								if(pDMX_buf > 512)
 									{
 										fDMX_buf_right = 0;
+										pDMX_buf = 0;
 										DMXSignalFlag = 1;                 //??????
 										}
 							}
